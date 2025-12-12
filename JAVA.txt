@@ -1,0 +1,17 @@
+//Declaramos la variable número y le asignamos el valor a 3 
+int numero = 3; 
+  
+//Asignamos el valor 25 a la variable número 
+numero = 25; 
+numero = "Hola mundo";   
+
+
+//Declaramos las variables v1 y v2 con var 
+//Podemos ver que son de diferentes tipos y las recibe normal 
+var v1 = 5; 
+var v2 = "Hola mundo";   
+
+
+// Reasignamos v1 y v2 
+var v1 = "Hola mundo"; 
+var v2 = "Campus";
