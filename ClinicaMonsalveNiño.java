@@ -6,11 +6,11 @@ public final class ClinicaMonsalveNiño {
     String numeroDocumento;
     int edad;
     String motivo;
-    double telefono;
+    String telefono;
     String tipoPaciente;
     String estado;
 
-    public ClinicaMonsalveNiño(String nombre, String numeroDocumento, int edad, String motivo, double telefono, String tipoPaciente, String estado) {
+    public ClinicaMonsalveNiño(String nombre, String numeroDocumento, int edad, String motivo, String telefono, String tipoPaciente, String estado) {
         this.nombre = nombre;
         this.numeroDocumento = numeroDocumento;
         this.edad = edad;
@@ -23,9 +23,9 @@ public final class ClinicaMonsalveNiño {
     
     String VerificarTipoPaciente() {
         if (edad < 18) {
-            return tipoPaciente = "Menor de edad";
+            return tipoPaciente = "Menor";
         } else {
-            return tipoPaciente = "Mayor de edad";
+            return tipoPaciente = "Adulto";
         }
     }
 
@@ -61,11 +61,11 @@ public final class ClinicaMonsalveNiño {
         this.motivo = motivo;
     }
 
-    public double getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(double telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
