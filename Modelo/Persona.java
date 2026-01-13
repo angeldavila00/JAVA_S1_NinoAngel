@@ -1,34 +1,31 @@
-package consulta;
 
-public final class ClinicaMonsalveNiño {
+package Modelo;
 
-    String nombre;
-    String numeroDocumento;
-    int edad;
-    String motivo;
-    String telefono;
-    String tipoPaciente;
-    String estado;
+import Controladores.Validaciones;
 
-    public ClinicaMonsalveNiño(String nombre, String numeroDocumento, int edad, String motivo, String telefono, String tipoPaciente, String estado) {
+
+public final class Persona {
+        String nombre;
+        String numeroDocumento;
+        int edad;
+        String motivo;
+        String telefono;
+        String tipoPaciente;
+        String estado;
+
+    public Persona(String nombre, String numeroDocumento, int edad, String motivo, String telefono, String tipoPaciente, String estado) {
+        Validaciones v = new Validaciones();
         this.nombre = nombre;
         this.numeroDocumento = numeroDocumento;
         this.edad = edad;
         this.motivo = motivo;
         this.telefono = telefono;
-        this.tipoPaciente = VerificarTipoPaciente();
+        this.tipoPaciente = v.VerificarTipoPaciente(edad);
         this.estado = estado;
     }
-
     
-    String VerificarTipoPaciente() {
-        if (edad < 18) {
-            return tipoPaciente = "Menor";
-        } else {
-            return tipoPaciente = "Adulto";
-        }
-    }
-
+    
+    
     public String getNombre() {
         return nombre;
     }
@@ -83,7 +80,6 @@ public final class ClinicaMonsalveNiño {
 
     public void setEstado(String estado) {
         this.estado = estado;
-
     }
 
 }
