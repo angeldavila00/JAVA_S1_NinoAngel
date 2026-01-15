@@ -2,24 +2,19 @@
 package MODELO;
 
 public class Empleado extends Persona{
-    private String cargo;
     private double salario;
     private String horario;
 
-    public Empleado(String cargo, double salario, String horario, String documento, String nombre, String apellido, int edad, String direccion) {
-        super(documento, nombre, apellido, edad, direccion);
-        this.cargo = cargo;
-        this.salario = salario;
-        this.horario = horario;
+    public Empleado(double salario,String horario,String documento, String nombre, String apellido, int edad, String direccion, String tipo) {
+        super(documento, nombre, apellido, edad, direccion, tipo);
+    }
+    
+      @Override
+    public void Presentarse(){
+        System.out.println("Soy Empleado, mi nombre es "+getNombre()+ " "+getApellido());
+        
     }
 
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
 
     public double getSalario() {
         return salario;
@@ -36,17 +31,18 @@ public class Empleado extends Persona{
     public void setHorario(String horario) {
         this.horario = horario;
     }
-
-
-    
-    
-    @Override
-    public void Presentarse(){
-        System.out.println("Soy Empleado, mi nombre es "+getNombre()+ " "+getApellido()+", me desempeño como "+getCargo());
-        
     }
 
+   
     
     
 
-}
+
+    
+    
+  
+
+    
+    
+
+

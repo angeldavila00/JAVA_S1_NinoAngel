@@ -7,17 +7,15 @@ public class Persona {
     private String apellido;
     private int edad;
     private String direccion;
+    private String tipo;
 
-    public Persona(String documento, String nombre, String apellido, int edad, String direccion) {
+    public Persona(String documento, String nombre, String apellido, int edad, String direccion, String tipo) {
         this.documento = documento;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.direccion = direccion;
-    }
-    
-    public void Presentarse(){
-        System.out.println("Hola me llamo "+getNombre()+" "+getApellido());
+        this.tipo = tipo;
     }
 
     public String getDocumento() {
@@ -59,5 +57,20 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    
+    public void Presentarse(){
+        System.out.println("Hola me llamo "+getNombre()+" "+getApellido());
+    }
+
+    
 
 }
