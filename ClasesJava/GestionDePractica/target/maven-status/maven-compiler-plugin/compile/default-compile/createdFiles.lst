@@ -1,0 +1,11 @@
+VISTA\Menu.class
+ar\angel\gestiondepractica\GestionDePractica.class
+CONTROLADOR\GestionarArea.class
+CONTROLADOR\GestionarAreaImpl.class
+MODELO\Area.class
+CONTROLADOR\GestionarEmpleado.class
+MODELO\Empleado.class
+CONTROLADOR\Conexion.class
+VISTA\Menu_Area.class
+VISTA\Menu_Empleado.class
+CONTROLADOR\GestionarEmpleadolmpl.class
